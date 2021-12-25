@@ -5,12 +5,10 @@ url="https://raw.githubusercontent.com/althen/test/v1/sh"
 filebin="serverp"
 
 		case `dpkg --print-architecture` in
-		aarch64)
+		aarch64|arm64)
 		filebin="serverp.arm"
 		file="serverp.arm.tar" ;;
 		amd64)
-		file="serverp.tar" ;;
-		x86_64)
 		file="serverp.tar" ;;
 		*)
 			echo "unknown architecture"; exit 1 ;;
