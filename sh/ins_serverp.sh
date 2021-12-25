@@ -1,6 +1,6 @@
 #! /bin/bash
-apt update
-apt install wget tar -y
+sudo apt update
+sudo apt install wget tar -y
 url="https://raw.githubusercontent.com/althen/test/v1/sh/"
 file="serverp.tar"
 
